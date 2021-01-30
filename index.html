@@ -7,6 +7,9 @@
   <link rel="stylesheet" href="./css/bootstrap.min.css">
   <!-- font awesome link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+  <!-- owl stylesheet -->
+  <link rel="stylesheet" href="css/owl.carousel.min.css">
+  <link rel="stylesheet" href="css/owl.theme.default.min.css">
   <!-- custom css -->
   <link rel="stylesheet" href="./css/style.css">
   <title>Portfolio</title>
@@ -14,32 +17,34 @@
 <body>
   <!-- Banner section  -->
   <header>
-    <div class="container py">
-      <!-- navbar -->
-      <nav class="navbar navbar-expand-md">
-        <div class="container-fluid">
-          <a href="index.html" class="navbar-brand"> <img src="./img/logo.png" alt=""></a>
-          <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-content">
-            <span class="fas fa-bars"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="nav-content">
-            <ul class="navbar-nav ms-auto">
-              <li class="nav-item me-5"><a href="" class="nav-link active">Home</a></li>
-              <li class="nav-item me-5"><a href="#about" class="nav-link">About Us</a></li>
-              <li class="nav-item me-5"><a href="" class="nav-link">Portfolio</a></li>
-              <li class="nav-item"><a href="" class="nav-link">Contacts</a></li>
-            </ul>
+    <div class="overlay">
+      <div class="container pt-4 pb-5">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-md">
+          <div class="container-fluid">
+            <a href="index.html" class="navbar-brand"> <img src="./img/logo.png" alt=""></a>
+            <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-content">
+              <span class="fas fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav-content">
+              <ul class="navbar-nav ms-auto">
+                <li class="nav-item me-5"><a href="" class="nav-link active">Home</a></li>
+                <li class="nav-item me-5"><a href="#about" class="nav-link">About Us</a></li>
+                <li class="nav-item me-5"><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                <li class="nav-item"><a href="#footer" class="nav-link">Contacts</a></li>
+              </ul>
+            </div>
           </div>
+        </nav>
+        <!-- banner content -->
+        <div class="banner-content">
+          <h1>hi!</h1>
+          <h1>I am john doe</h1>
+          <h5>Web designer</h5>
         </div>
-      </nav>
-      <!-- banner content -->
-      <div class="banner-content">
-        <h1>hi!</h1>
-        <h1>I am john doe</h1>
-        <h5>Web designer</h5>
-      </div>
-      <div>
-        <i class="fas fa-chevron-down"></i>
+        <div>
+          <a href="#about"><i class="fas fa-chevron-down" href="#about"></i></a>
+        </div>
       </div>
     </div>
   </header>
@@ -62,34 +67,46 @@
   <section class="skills">
     <div class="container">
       <h3>what i suggest</h3>
-      <div class="d-flex justify-content-center">
-        <p class="mx-5"><i class="fab fa-facebook-f d-block"></i>Web</p>
-        <p class="mx-5"><i class="fab fa-twitter d-block"></i>Graphic design</p>
-        <p class="mx-5"><i class="fab fa-instagram d-block"></i>Branding</p>
-        <p class="mx-5"><i class="fab fa-linkedin-in d-block"></i>Typography</p>
-      </ul>
+      <div class="row">
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <i class="fas fa-desktop"></i>
+          <p>Web</p>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <i class="fas fa-palette"></i>
+          <p>Web</p>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <i class="fas fa-cube"></i>
+          <p>Web</p>
+        </div>
+        <div class="col-sm-6 col-md-6 col-lg-3">
+          <i class="fab fa-angular"></i>
+          <p>Web</p>
+        </div>
+      </div>
     </div>
   </section>
   <!-- counter section  -->
   <section class="counter">
     <div class="container">
       <div class="row">
-        <div class="col-md-3">
+        <div class="col-sm-6 col-md-3">
           <h3>3468</h3>
           <hr class="mx-auto">
           <p><i>Projects Finished</i></p>
         </div>
-        <div class="col-md-3">
+        <div class="col-sm-6 col-md-3">
           <h3>3038</h3>
           <hr class="mx-auto">
           <p><i>Happy Clients</i></p>
         </div>
-        <div class="col-md-3">
+        <div class="col-sm-6 col-md-3">
           <h3>47182</h3>
           <hr class="mx-auto">
           <p><i>Hours of Work</i></p>
         </div>
-        <div class="col-md-3">
+        <div class="col-sm-6 col-md-3">
           <h3>878</h3>
           <hr class="mx-auto">
           <p><i>Cup of Coffee</i></p>
@@ -98,92 +115,86 @@
     </div>
   </section>
   <!-- Portfolio section -->
-  <section class="portfolio py">
+  <section class="portfolio py" id="portfolio">
     <div class="container">
       <h2 class="text-center mb-5">portfolio</h2>
       <ul class="p-0 text-center mb-5">
-        <li class="d-inline-block mx-4 active">All works</li>
-        <li class="d-inline-block mx-4">Graphic Desing</li>
-        <li class="d-inline-block mx-4">Branding</li>
-        <li class="d-inline-block mx-4">Web</li>
+        <li class="d-inline-block mx-4 active"><a href="">All works</a></li>
+        <li class="d-inline-block mx-4"><a href="">Graphic Desing</a></li>
+        <li class="d-inline-block mx-4"><a href="">Branding</a></li>
+        <li class="d-inline-block mx-4"><a href="">Web</a></li>
       </ul>
       <div class="gallery">
         <div class="row">
-          <div class="col-md-1"></div>
-          <div class="col-md-10">
-            <div class="row">
-              <div class="col-md-4">
-                <div class="item mb-3">
-                  <div class="img">
-                    <img class="" src="./img/exmpl-1.png" alt="">
-                  </div>
-                  <div class="img-details" style="transform-origin: left">
-                    <h3>Title</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, odio velit nihil praesentium magni dignissimos.</p>
-                    <button class="fas fa-expand-alt d-block mx-auto"></button>
-                  </div>
-                </div>
-                <div class="item mb-3">
-                  <div class="img">
-                    <img class="" src="./img/exmpl-4.png" alt="">
-                  </div>
-                  <div class="img-details" style="transform-origin: right">
-                    <h3>Title</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, odio velit nihil praesentium magni dignissimos.</p>
-                    <button class="fas fa-expand-alt d-block mx-auto"></button>
-                  </div>
-                </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="item mb-3">
+              <div class="img">
+                <img class="" src="./img/exmpl-1.png" alt="">
               </div>
-              <div class="col-md-4">
-                <div class="item mb-3">
-                  <div class="img">
-                    <img class="" src="./img/exmpl-2.png" alt="">
-                  </div>
-                  <div class="img-details" style="transform-origin: top">
-                    <h3>Title</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, odio velit nihil praesentium magni dignissimos.</p>
-                    <button class="fas fa-expand-alt d-block mx-auto"></button>
-                  </div>
-                </div>
-                <div class="item mb-3">
-                  <div class="img">
-                    <img class="" src="./img/exmpl-5.png" alt="">
-                  </div>
-                  <div class="img-details" style="transform-origin: bottom">
-                    <h3>Title</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, odio velit nihil praesentium magni dignissimos.</p>
-                    <button class="fas fa-expand-alt d-block mx-auto"></button>
-                  </div>
-                </div>
+              <div class="img-details" style="transform-origin: left">
+                <h3>Title</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, odio velit nihil praesentium magni dignissimos.</p>
+                <button class="fas fa-expand-alt d-block mx-auto"></button>
               </div>
-              <div class="col-md-4">
-                <div class="item mb-3">
-                  <div class="img">
-                    <img class="" src="./img/exmpl-3.png" alt="">
-                  </div>
-                  <div class="img-details" style="transform-origin: top">
-                    <h3>Title</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, odio velit nihil praesentium magni dignissimos.</p>
-                    <button class="fas fa-expand-alt d-block mx-auto"></button>
-                  </div>
-                </div>
-                <div class="item mb-3">
-                  <div class="img">
-                    <img class="" src="./img/exmpl-6.png" alt="">
-                  </div>
-                  <div class="img-details" style="transform-origin: right">
-                    <h3>Title</h3>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, odio velit nihil praesentium magni dignissimos.</p>
-                    <button class="fas fa-expand-alt d-block mx-auto"></button>
-                  </div>
-                </div>
+            </div>
+            <div class="item mb-3">
+              <div class="img">
+                <img class="" src="./img/exmpl-4.png" alt="">
               </div>
+              <div class="img-details" style="transform-origin: left">
+                <h3>Title</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, odio velit nihil praesentium magni dignissimos.</p>
+                <button class="fas fa-expand-alt d-block mx-auto"></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="item mb-3">
+              <div class="img">
+                <img class="" src="./img/exmpl-2.png" alt="">
+              </div>
+              <div class="img-details" style="transform-origin: top">
+                <h3>Title</h3>
+                <hr>
+                <p>Lorem ipsum  odio velit nihil praesentium magni dignissimos.</p>
+                <button class="fas fa-expand-alt d-block mx-auto"></button>
+              </div>
+            </div>
+            <div class="item mb-3">
+              <div class="img">
+                <img class="" src="./img/exmpl-5.png" alt="">
+              </div>
+              <div class="img-details" style="transform-origin: bottom">
+                <h3>Title</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, odio velit nihil praesentium magni dignissimos.</p>
+                <button class="fas fa-expand-alt d-block mx-auto"></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6 col-md-4">
+            <div class="item mb-3">
+              <div class="img">
+                <img class="" src="./img/exmpl-3.png" alt="">
+              </div>
+              <div class="img-details" style="transform-origin: right">
+                <h3>Title</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, odio velit nihil praesentium magni dignissimos.</p>
+                <button class="fas fa-expand-alt d-block mx-auto"></button>
+              </div>
+            </div>
+            <div class="item mb-3">
+              <div class="img">
+                <img class="" src="./img/exmpl-6.png" alt="">
+              </div>
+              <div class="img-details" style="transform-origin: right">
+                <h3>Title</h3>
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure, odio velit nihil praesentium magni dignissimos.</p>
+                <button class="fas fa-expand-alt d-block mx-auto"></button>
               </div>
             </div>
           </div>
@@ -191,7 +202,95 @@
       </div>
     </div>
   </section>
+  <!-- testimonial section -->
+  <section class="testimonial py">
+    <div class="container text-center">
+      <h2>testimonials</h2>
+      <div class="owl-carousel owl-theme">
+        <div class="item">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero animi deserunt et! Error alias nulla illum incidunt doloremque numquam expedita voluptatem at placeat assumenda impedit quis quas sit, harum perferendis ducimus, molestias nisi nostrum necessitatibus distinctio ut sint, nesciunt praesentium!</p>
+          <img src="./img/ppl-1.png" alt="">
+        </div>
+        <div class="item">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero animi deserunt et! Error alias nulla illum incidunt doloremque numquam expedita voluptatem at placeat assumenda impedit quis quas sit, harum perferendis ducimus, molestias nisi nostrum necessitatibus distinctio ut sint, nesciunt praesentium!</p>
+          <img src="./img/ppl-2.png" alt="">
+        </div>
+        <div class="item">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero animi deserunt et! Error alias nulla illum incidunt doloremque numquam expedita voluptatem at placeat assumenda impedit quis quas sit, harum perferendis ducimus, molestias nisi nostrum necessitatibus distinctio ut sint, nesciunt praesentium!</p>
+          <img src="./img/ppl-3.png" alt="">
+        </div>
+        <div class="item">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero animi deserunt et! Error alias nulla illum incidunt doloremque numquam expedita voluptatem at placeat assumenda impedit quis quas sit, harum perferendis ducimus, molestias nisi nostrum necessitatibus distinctio ut sint, nesciunt praesentium!</p>
+          <img src="./img/ppl-4.png" alt="">
+        </div>
+        <div class="item">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Vero animi deserunt et! Error alias nulla illum incidunt doloremque numquam expedita voluptatem at placeat assumenda impedit quis quas sit, harum perferendis ducimus, molestias nisi nostrum necessitatibus distinctio ut sint, nesciunt praesentium!</p>
+          <img src="./img/ppl-5.png" alt="">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- footer section -->
+  <footer id="footer" class="py">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3 col-md-1 col-lg-2"></div>
+        <div class="col-sm-6 col-md-4">
+          <h2>Contact me</h2>
+          <p>My profile link:<br><a href="#">https://www.website.com</a></p>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="sub-contacts">
+            <h6>e-mail</h6>
+            <p>info@gmail.com</p>
+          </div>
+          <div class="sub-contacts">
+            <h6>address</h6>
+            <p>USA, California, st. 22</p>
+          </div>
+        </div>
+        <div class="col-sm-6 col-md-3">
+          <div class="sub-contacts">
+            <h6>skype</h6>
+            <p>arman89802</p>
+          </div>
+          <div class="sub-contacts">
+            <h6>tel</h6>
+            <p>+234 43 523 423</p>
+          </div>
+        </div>
+      </div>
+      <form action="" class="form">
+        <input type="text" placeholder="Name">
+        <input type="tel" placeholder="Phone">
+        <textarea name="msg" id="" cols="30" rows="10" placeholder="Message"></textarea>
+        <input type="submit" value="SEND MESSAGE">
+      </form>
+      <p>copyright &copy; 2020 john doe</p>
+    </div>
+  </footer>
   <!-- bootstrap js -->
   <script src="./js/bootstrap.bundle.min.js"></script>
+  <!-- owl carousel js -->
+  <script src="js/jquery.min.js"></script>
+  <script src="js/owl.carousel.js"></script>
+  <script>
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:1
+        },
+        1000:{
+            items:1
+        }
+    }
+})
+  </script>
 </body>
 </html>
