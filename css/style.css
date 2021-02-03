@@ -397,20 +397,43 @@ footer .container > p {
   line-height: 26px;
 }
 /* media query */
-@media ( max-width: 575px ) {
-  .portfolio .item {
-    width: 80%;
-    margin-inline: auto;
+@media ( min-width: 992px ) and ( max-width: 1199px ) {
+  .banner-content {
+    height: 40vh;
+  }
+  .portfolio .row {
+    padding-inline: 1rem;
   }
 }
-@media ( max-width: 767px ) {
+@media ( min-width: 768px ) and ( max-width: 991px ) {
+  .banner-content {
+    height: 30vh;
+  }
+  .portfolio .row {
+    padding-inline: 1rem;
+  }
+  .portfolio .item .img-details h3 {
+    font-size: 24px;
+  }
+  .portfolio .img-details hr {
+    margin-block: 0.5rem;
+  }
+  .portfolio .img-details {
+    /* position: static; */
+    /* transform: scale(1); */
+    /* padding: 20px; */
+  }
+  .portfolio .item .img-details p {
+    font-size: 14px;
+    margin-bottom: 0.5rem;
+  }
+}
+@media ( min-width: 576px ) and ( max-width: 767px ) {
+  .banner-content {
+    height: 50vh;
+  }
   .py {
   padding: 3rem 0;
-  }
-  /* For the bottom hover effect in mobile divice width < 768px.
-  Without this the bottom bars will stretch to the end of the screen. */
-  .nav-link {
-    display: inline-block;
   }
   .nav-item {
     margin-right: 0 !important;
@@ -419,35 +442,160 @@ footer .container > p {
     font-size: 0.5rem;
   }
   .py {
-  padding: 3rem 0;
+    padding: 3rem 0;
+  }
+  .portfolio .row {
+    padding-inline: 1rem;
+  }
+  .portfolio .item {
+    display: flex;
   }
   .portfolio .item .img-details p {
     font-size: 14px;
-  }
-  /* .portfolio .item {
-    display: flex;
-    margin-bottom: 40px !important;
   }
   .portfolio .item .img-details {
     position: static;
     transform: scale(1);
     width: 70%;
-  } */
+  } 
+  footer.py {
+    padding-bottom: 1rem;
+  }
 }
-@media ( max-width: 991px ) {
-  .portfolio .item .img-details h3 {
+@media ( max-width: 575px ) {
+  .py {
+    padding: 2rem 0 !important;
+  }
+  header .overlay .container {
+    padding-bottom: 30px !important;
+  }
+  .banner-content {
+    padding-top: 30px;
+    height: auto;
+  }
+  .banner-content h1 {
+    font-size: 32px;
+  }
+  .fa-chevron-down {
+    display: none;
+  }
+  #about h2 {
     font-size: 24px;
+    padding-bottom: 20px;
   }
-  .portfolio .img-details hr {
-    margin-block: 0.5rem;
+  #about img {
+    padding-bottom: 10px;
   }
-  .portfolio .item .img-details p {
+  #about p:nth-child(3) {
+    padding-bottom: 0;
+  }
+  #about p:nth-child(4) {
+    padding-bottom: 0 !important;
+  }
+  #about ul {
+    padding: 20px;
+  }
+  .skills {
+    padding: 30px 0;
+  }
+  .skills::before {
+    top: 0;
+  }
+  .skills .container {
+    padding: 1rem;
+  }
+  .skills .container h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .skills .container .row {
+    width: 80%;
+    margin: 0 auto;
+  }
+  .skills div i {
+    font-size: 24px;
+    width: 60px;
+    height: 60px;
+    line-height: 60px;
+    margin-bottom: 0px;
+  }
+  .skills .container .col-sm-6 {
+    display: flex;
+    padding: 0.5rem 0;
+    justify-content: center;
+  }
+  .skills .container .col-sm-6 p {
+    margin: auto;
+  }
+  .counter {
+    padding: 2rem 0;
+    text-align: center;
+  }
+  .counter .col-sm-6 {
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    align-items: center;
+  }
+  .counter .col-sm-6 hr {
+    display: none;
+  }
+  .counter .col-sm-6 h3 {
+    font-size: 32px;
+    width: 30%;
+  }
+  .counter .col-sm-6 p {
+    width: 70%;
+    font-size: 16px;
+    margin: auto;
+  }
+  .portfolio ul li {
+    margin: 0 !important;
+    padding: 4px;
+  }
+  .portfolio ul li a {
     font-size: 14px;
-    margin-bottom: 0.5rem;
   }
-}
-@media ( max-width: 1199px ) {
   .portfolio .row {
-    padding-inline: 0rem;
+    padding-inline: 1rem;
+  }
+  .portfolio .item {
+    width: 80%;
+    margin-inline: auto;
+  }
+  .portfolio .img-details {
+    position: static;
+    transform: scale(1);
+    padding: 20px;
+  }
+  .testimonial h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+  .testimonial p {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .testimonial img {
+    margin: 20px auto;
+  }
+  footer .py {
+    padding-bottom: 0 !important;
+  }
+  footer .col-md-4 h2 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  footer .col-md-3 .sub-contacts {
+    padding-bottom: 0;
+  }
+  footer .form {
+    margin: 20px auto 0 auto;
+  }
+  footer .form input {
+    width: 100% !important;
+  }
+  footer .container > p {
+    margin-bottom: 0;
   }
 }
