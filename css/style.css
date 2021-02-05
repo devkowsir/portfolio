@@ -399,7 +399,7 @@ footer .container > p {
 /* media query */
 @media ( min-width: 992px ) and ( max-width: 1199px ) {
   .banner-content {
-    height: 40vh;
+    height: 80vh;
   }
   .portfolio .row {
     padding-inline: 1rem;
@@ -407,7 +407,7 @@ footer .container > p {
 }
 @media ( min-width: 768px ) and ( max-width: 991px ) {
   .banner-content {
-    height: 30vh;
+    height: 60vh;
   }
   .portfolio .row {
     padding-inline: 1rem;
